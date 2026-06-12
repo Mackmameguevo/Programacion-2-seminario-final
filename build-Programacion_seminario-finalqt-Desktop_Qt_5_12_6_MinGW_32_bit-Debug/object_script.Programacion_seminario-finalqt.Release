@@ -1,0 +1,11 @@
+release/GestionBanco.o
+release/OperacionFinanciera.o
+release/Prestamo.o
+release/ValidacionPrestamo.o
+release/main.o
+release/mainwindow.o
+release/moc_GestionBanco.o
+release/moc_OperacionFinanciera.o
+release/moc_Prestamo.o
+release/moc_ValidacionPrestamo.o
+release/moc_mainwindow.o
