@@ -114,7 +114,7 @@ bool GestionBanco::guardarPrestamoDB(Prestamo *prestamo)
 
     QSqlQuery query;
     query.prepare("INSERT INTO Prestamos (cliente, ci, monto, dias, porcentaje_interes, monto_total, estado) "
-                  "VALUES (:cliente, :ci, :monto, :dias, :interes, :monto_total, :estado)");
+                  "VALUES (:cliente, :ci, :monto, :dias, :interes, :monto_total, 'Activo')");
 
     query.addBindValue(prestamo->cliente());
     query.addBindValue(prestamo->ci());
@@ -122,7 +122,6 @@ bool GestionBanco::guardarPrestamoDB(Prestamo *prestamo)
     query.addBindValue(prestamo->dias());
     query.addBindValue(prestamo->porcentajeInteres());
     query.addBindValue(prestamo->calcularMontoTotal());
-    query.addBindValue(prestamo->estado());
 
     if (!query.exec()) {
         establecerError("Error al guardar préstamo: " + query.lastError().text());

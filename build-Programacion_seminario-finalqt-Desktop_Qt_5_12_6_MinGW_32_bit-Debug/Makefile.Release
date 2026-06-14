@@ -69,7 +69,7 @@ OBJECTS       = release/GestionBanco.o \
 		release/moc_ValidacionPrestamo.o \
 		release/moc_mainwindow.o
 
-DIST          =  ..\GestionBanco.h \
+DIST          = ../banco.sql ..\GestionBanco.h \
 		..\OperacionFinanciera.h \
 		..\Prestamo.h \
 		..\ValidacionPrestamo.h \

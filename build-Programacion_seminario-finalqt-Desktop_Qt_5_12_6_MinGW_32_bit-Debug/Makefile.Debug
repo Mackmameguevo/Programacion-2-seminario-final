@@ -69,7 +69,7 @@ OBJECTS       = debug/GestionBanco.o \
 		debug/moc_ValidacionPrestamo.o \
 		debug/moc_mainwindow.o
 
-DIST          =  ..\GestionBanco.h \
+DIST          = ../banco.sql ..\GestionBanco.h \
 		..\OperacionFinanciera.h \
 		..\Prestamo.h \
 		..\ValidacionPrestamo.h \

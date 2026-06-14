@@ -138,7 +138,7 @@ void MainWindow::inicializarUI()
 void MainWindow::configurarBaseDatos()
 {
     // Configurar conexión MySQL
-    if (!m_gestionBanco->conectarBaseDatos("localhost", "root", "password", "banco", 3306)) {
+    if (!m_gestionBanco->conectarBaseDatos("localhost", "root", "1234", "banco", 3306)) {
         mostrarMensaje("Error de Conexión", 
                       "No se pudo conectar con la base de datos MySQL.\n" + 
                       m_gestionBanco->ultimoError(), true);
